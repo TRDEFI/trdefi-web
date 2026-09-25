@@ -82,6 +82,15 @@ The liquidity engine behind the maker product runs in public. Its metrics update
 | Open strategies | ![](https://img.shields.io/endpoint?url=https%3A%2F%2Fyield.trdefi.com%2Fapi%2Fbadge%3Fmetric%3Dstrategies) |
 | Networks | ![](https://img.shields.io/endpoint?url=https%3A%2F%2Fyield.trdefi.com%2Fapi%2Fbadge%3Fmetric%3Dchains) |
 
+## The API
+
+The engine's catalogue is readable by anyone. Six endpoints need no credential at all — `/api/stats`,
+`/api/chains`, `/api/strategies`, `/api/strategy-detail`, `/api/quote` and `/api/badge` — and the two
+write endpoints, `POST /v1/positions` and `POST /v1/swaps`, are **prepare-only**: they return
+**unsigned transactions** for a client's own wallet to sign, and can never move funds themselves.
+
+[API reference](https://yield.trdefi.com/docs/api) · [OpenAPI 3.1](https://yield.trdefi.com/openapi.json) · [Request access](https://yield.trdefi.com/docs/api#access)
+
 ## Screenshots
 
 ![Home](assets/screenshot-home.png)
